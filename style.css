@@ -1,0 +1,285 @@
+*{
+	margin:0;
+	padding: 0;
+
+}
+body,html{
+	height: 100%;
+}
+.menü{
+	position:fixed;/*Menuyu sabitlersayfalara*/
+    height: 80px;
+    width: 100%;
+    text-align: center;/*yazıyı orta-üste  alır*/
+    line-height: 80px;/*belırlenen kısmın ortasına alır*/
+    background-color:rgba(64,26,77,0.2);
+   z-index:9999;/* yazıyı daha okunaklı on planda tutar*/
+}
+.menü a{
+	color: white;/*menunn içindeki yazıların rengi*/
+	font-family: arial;
+	font-size:1.2em;/*yazını boyutu*/
+	text-decoration: none;/*yazıların altındakı alt çizgi yok eder*/
+    margin-left:7px;
+    padding: 10px 10px;/* menude seçilmiş gibi olan yazıların etrafındaki çerçeve boyutu*/
+    border-radius: 10px;/*çerçeve şeklini kenarlarını yuvarlak yapar.*/
+    transition: 1s;
+
+}
+nav a:hover{/*menudeki yazıların seçilmiş gibi gösterilmesi*/
+	background-color:#333366;
+	color:black;
+}
+.sayfa{
+	height: 100%;
+	background-color:#9966CC;
+    background-size: cover;/*resmin sayfaya tam yerleştirmesini sağlar. */
+    background-attachment: fixed;/*sayfayı kaydırdığında bile sayfa sbt durması*/
+    z-index: 9999;
+}
+.bant{
+	height: 60%;
+    background-color: #330033;
+}
+#s1{
+	background-image: url("22.jpg");
+}
+#s1 img{
+	width: 120px;
+	height: 100px;
+	position: absolute;
+	z-index: 6;
+	margin-left: 25px;
+	position:fixed;/*logoyu diğer sayfalarada sabitler*/
+}
+#s1 .filtre{
+	position:absolute;/*yazıları fotografın üstüne ayarlar*/
+	width: 100%;
+	height: 100%;
+	background-color: black;/* sayfadaki renge filtre veriyo*/
+	opacity: 0.3/* filtredeki rengin biraz daha saydamlaştırma*/
+   
+}
+#s1 .yazi{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: white;
+	z-index:1;
+	margin-top: 25%;
+	text-align: center;
+	font-size: 18px;
+}
+#s1.yazi h1{
+	color: #e6f6f7;
+	font-size:4em;
+	font-family: calibri;
+    padding-bottom: 35px;
+}
+#s1.yazi p{
+	color: white;
+	font-size:1.5em;
+	font-family: calibri;
+	letter-spacing:4px;/*yazıyı genişletiyor*/
+    
+}
+#s3{
+	background-image: url("aa.jpg");
+}
+#s3 .filtre{
+	width: 100%;
+	height: 100%;
+	background-color: black;/* sayfadaki renge filtre veriyo*/
+	opacity: 0.3/* filtredeki rengin biraz daha saydamlaştırma*/
+}
+#s4{
+	height:100%;
+}
+#s4 .boxb{
+	width:90%;
+	margin:0 auto 0 auto;
+	
+
+}
+#s4 .boxb ul{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	
+}
+#s4 .boxb ul li{
+	position: relative;
+	list-style: none;
+	width:30%; 
+	margin:0 5% 0 0;
+	float: left;
+	background-position: left bottom;
+	background-position: cover;/*yazı ekrana sığsın dıye*/	
+    min-height: 650px;
+}
+#s4 .boxb ul li:last-child{
+	margin: 0 0 0 0;
+
+}
+#s4 .boxb ul li .yazı1{
+	position: absolute;
+	bottom: 50px;
+	width: 90%;
+	height: 90%;
+	left: 25px;
+	background-image: url(box/ss.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+#s4 .boxb ul li .yazı1 p{
+	margin-top: 10%;
+    text-transform:uppercase;
+    font-size: 25px;
+    font-family:arial;
+
+}
+#s4 .boxb ul li .yazı1 h2{
+	margin-top: 120%;
+    text-transform: uppercase;
+    font-size: 35px;
+     font-family:arial;
+}
+#s4 .boxb ul li .yazı2{
+	position: absolute;
+	bottom: 50px;
+	width: 90%;
+	height: 90%;
+	left: 25px;
+	background-image: url(box/ss.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+#s4 .boxb ul li .yazı2 p{
+	margin-top: 10%;
+    text-transform:uppercase;
+    font-size: 25px;
+    font-family:arial;
+
+}
+#s4 .boxb ul li .yazı2 h2{
+	margin-top: 120%;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: arial;
+}
+#s4 .boxb ul li .yazı3{
+	position: absolute;
+	bottom: 50px;
+	width: 90%;
+	height: 90%;
+	left: 25px;
+	background-image: url(box/ss.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+#s4 .boxb ul li .yazı3 p{
+	margin-top: 10%;
+    text-transform:uppercase;
+    font-size: 25px;
+    font-family:arial;
+
+}
+#s4 .boxb ul li .yazı3 h2{
+	margin-top: 120%;
+    text-transform: uppercase;
+    font-size: 35px;
+ font-family: calibri;
+}
+
+
+
+
+#s5{
+	background-image: url("12.jpg");
+}
+#s5 .filtre{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;/* sayfadaki renge filtre veriyo*/
+	opacity: 0.3/* filtredeki rengin biraz daha saydamlaştırma*/
+    
+
+}
+#s5 .video{
+   position: absolute;
+   width: 600px;
+   height: 450px;
+   transform: translate(50%,35%);
+   overflow: hidden;
+   border-radius: 25px;
+}
+#s5 .video .video2{
+	padding-left:5px;
+}
+#s6{
+	height: 40%;
+	background-color:	grey;
+}
+#s6 .sosyal{
+ position: absolute;
+ width: 80%;
+ height: 30%;
+ min-width: 650px;
+ text-align: center;
+ transform: translate(10%,10%);
+ border: 2px solid brown;
+ border-radius: 25px;
+}
+#s6 .sosyal ul{
+ display: flex;
+ text-align: center;
+ position: absolute;
+ padding-left: 35%;
+}
+#s6 .sosyal ul li{
+ background: black;
+ margin: 8px;
+ list-style: none;
+ font-size: 30px;
+ transition: .5s;
+}
+#s6 .sosyal ul li a{
+ width: 40px;
+ padding: 6px 0;
+ display: block;
+ color: white;
+}
+#s6 .sosyal ul li:nth-child(1){background: #3b5998;}
+#s6 .sosyal ul li:nth-child(2){background: #00aced;}
+#s6 .sosyal ul li:nth-child(3){background: #007bb6;}
+#s6 .sosyal ul li:nth-child(4){background: #cb2027;}
+#s6 .sosyal ul li:nth-child(5){background: #bb0000;}
+#s6 .sosyal ul li:nth-child(6){background: #dd4b39;}
+#s6 .sosyal ul li:hover{
+ transform: translateY(-8px);
+ box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+
+}
+#s6 .sosyal h1{
+ padding-top: 6%;
+ font-family: calibri;
+ color:brown;
+}
+#s6 .sosyal p{
+ font-family: arial;
+ color: #45668e;
+ font-size: 20px;
+}
+#s6 .foot{
+	width: 100%;
+	height: 25px;
+	background-color: rgba(0,0,0,0.4);
+    text-align:center;
+    position: fixed;
+    bottom: 0px;
+    font-family:arial;
+    font-size: 12px;
+    color: grey;
+}
